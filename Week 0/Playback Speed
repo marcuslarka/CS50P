@@ -6,7 +6,7 @@ x = input(
 #Split the input
 y = x.split()
 
-#Join them 2ith the dots inbetween
+#Join them with the dots inbetween
 i = '...'.join(y)
 
 #Print it back to the user
