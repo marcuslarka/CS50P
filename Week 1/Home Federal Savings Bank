@@ -1,1 +1,19 @@
+# Ask the user for a greeting and store the input in the variable 'greeting'
+greeting = input("Hello: ")
+
+# Check if the greeting is "Hello"
+if greeting == "Hello":
+    print("$0")
+# Check if the greeting is "Hello, Newman"
+elif greeting == "Hello, Newman":
+    print("$0")
+# Check if the greeting is "How you doing?"
+elif greeting == "How you doing?":
+    print("$20")
+# Check if the greeting is "What's happening?" or "What's up?"
+elif greeting == "What's happening?" or greeting == "What's up?":
+    print("$100")
+# If none of the above conditions are met, print "$0"
+else:
+    print("$0")
 
