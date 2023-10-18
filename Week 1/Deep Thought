@@ -1,1 +1,16 @@
+# Ask the user a question and store the input in the variable 'x'
+x = input("What is the Answer to the Great Question of Life, the Universe, and Everything?: ")
+
+# Check if the input is "42" (with leading/trailing whitespace removed)
+if x.strip() == "42":
+    print("Yes")
+# Check if the input is "forty-two" (case insensitive, with leading/trailing whitespace removed)
+elif x.lower().strip() == "forty-two":
+    print("Yes")
+# Check if the input is "forty two" (case insensitive, with leading/trailing whitespace removed)
+elif x.lower().strip() == "forty two":
+    print("Yes")
+# If none of the above conditions are met, print "No"
+else:
+    print("No")
 
