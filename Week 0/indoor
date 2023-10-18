@@ -1,1 +1,7 @@
+# Ask user for input
+x = input(
 
+)
+
+#Print the input in lower cases
+print(x.lower())
