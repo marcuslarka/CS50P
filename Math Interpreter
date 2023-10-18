@@ -1,0 +1,22 @@
+# Prompt the user for an expression and store the input in the variable 'expression'
+expression = input("Expression: ")
+
+# Split the expression into its components (x, y, z)
+x, y, z = expression.split(" ")
+
+# Convert x and z to float values for numerical operations
+new_x = float(x)
+new_z = float(z)
+
+# Perform the corresponding operation based on the operator 'y'
+if y == "+":
+    result = new_x + new_z
+if y == "-":
+    result = new_x - new_z
+if y == "*":
+    result = new_x * new_z
+if y == "/":
+    result = new_x / new_z
+
+# Print the result of the operation
+print(result)
