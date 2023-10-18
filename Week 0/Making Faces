@@ -1,1 +1,11 @@
+#Promt user for input
+def main():
+    x = input("Skriv en mening med smilies (t.ex. :) eller :() ): ")
+    print(convert(x))
 
+#Convert and replace :) or :( with a image of a smiley
+def convert(x):
+    x = x.replace(":)", "🙂").replace(":(", "🙁")
+    return x
+
+main()
