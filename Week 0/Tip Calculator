@@ -1,1 +1,29 @@
+# Define a function to convert a string representing dollars to a float
+def dollars_to_float(d):
+    # Remove the dollar sign and convert to float
+    d = d.replace("$", "")
+    return float(d)
+
+# Define a function to convert a string representing a percentage to a float
+def percent_to_float(p):
+    # Remove the percentage sign and convert to float
+    p = p.replace("%", "")
+    return float(p) / 100
+
+# Define the main function
+def main():
+    # Ask the user for the cost of the meal and convert it to a float
+    dollars = dollars_to_float(input("How much was the meal? "))
+    
+    # Ask the user for the tip percentage and convert it to a float
+    percent = percent_to_float(input("What percentage would you like to tip? "))
+    
+    # Calculate the tip amount
+    tip = dollars * percent
+    
+    # Print the amount to leave as tip
+    print(f"Leave ${tip:.2f}")
+
+# Call the main function to run the program
+main()
 
