@@ -1,0 +1,24 @@
+# Ask the user for a file name and store the input in the variable 'filename'
+filename = input("File name: ")
+
+# Convert the filename to lowercase
+new_filename = filename.lower()
+
+# Check the file type based on the file extension
+if ".gif" in new_filename:
+    print("image/gif")
+elif ".png" in new_filename:
+    print("image/png")
+elif ".jpg" in new_filename:
+    print("image/jpeg")
+elif ".jpeg" in new_filename:
+    print("image/jpeg")
+elif ".pdf" in new_filename:
+    print("application/pdf")
+elif ".txt" in new_filename:
+    print("text/plain")
+elif ".zip" in new_filename:
+    print("application/zip")
+else:
+    # If none of the above conditions are met, assume it's an unknown file type
+    print("application/octet-stream")
