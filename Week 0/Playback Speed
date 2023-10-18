@@ -1,1 +1,13 @@
+ #Ask for input
+x = input(
 
+)
+
+#Split the input
+y = x.split()
+
+#Join them 2ith the dots inbetween
+i = '...'.join(y)
+
+#Print it back to the user
+print(i)
