@@ -1,1 +1,11 @@
+# Prompt the user to enter a value for 'm' and convert it to an integer
+x = int(input("m: "))
 
+# Define the constant 'c'
+c = 300000000
+
+# Calculate the energy (e = m * c^2)
+e = x * c * c
+
+# Print the calculated energy
+print("E:", e)
